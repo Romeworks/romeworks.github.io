@@ -5,28 +5,173 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Silo Drop</title>
 <meta name="description" content="Silo Drop: a one-thumb endless descent. Outrun the crusher and find your way down.">
-<style>
-  body { margin: 0; padding: 48px 20px 64px; background: #0c0e10; color: #f2efe6;
-         font: 17px/1.6 -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif; }
-  main { max-width: 680px; margin: 0 auto; }
-  h1 { font-size: 40px; margin: 0 0 8px; letter-spacing: 0.12em; }
-  .tag { color: #ffc61a; margin: 0 0 28px; }
-  p { color: #d8d5cc; }
-  a { color: #ffc61a; }
-  img { max-width: 100%; border-radius: 16px; display: block; margin: 24px 0; }
-</style>
+<link rel="canonical" href="https://romeworks.github.io/silo-drop/">
+<meta name="theme-color" content="#121315">
+<link rel="icon" href="../assets/img/sd/icon.png" type="image/png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Romeworks">
+<meta property="og:title" content="Silo Drop: outrun the crusher">
+<meta property="og:description" content="A one-thumb endless descent. Find the gap, drop through, and keep ahead of the teeth. Coming soon to Google Play.">
+<meta property="og:url" content="https://romeworks.github.io/silo-drop/">
+<meta property="og:image" content="https://romeworks.github.io/assets/img/og-silo-drop.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../assets/site.js" defer></script>
 </head>
 <body>
-<main>
-  <h1>SILO DROP</h1>
-  <p class="tag">Outrun the crusher. Find your way down.</p>
-  <p>A runner drops down an endless silo, one ledge at a time, while a tunnel
-  boring machine grinds down after it. Tap to jump, tap again in the air to
-  dash, swipe back to turn, swipe down to slide. Find the gap, drop through,
-  and keep ahead of the teeth.</p>
-  <img src="feature.png" alt="Silo Drop: an arrow dropping through the gaps of two rings" width="680">
-  <p>Made with Godot. No accounts, no sign-in, plays offline.</p>
-  <p><a href="privacy.html">Privacy policy</a> · <a href="licenses.html">Licenses</a> · <a href="../">Romeworks</a></p>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="112 112 288 300">
+    <path fill="currentColor" fill-opacity="0.42" d="M230 125Q229 239 127 290Q197 219 230 125Z"/>
+    <path fill="currentColor" fill-opacity="0.68" d="M292 130Q299 283 158 343Q250 252 292 130Z"/>
+    <path fill="currentColor" d="M360 140Q381 334 197 400Q303 286 360 140Z"/>
+  </symbol>
+  <symbol id="arrow" viewBox="0 0 24 24">
+    <path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="sound-off" viewBox="0 0 24 24">
+    <path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path d="M17 9l5 6M22 9l-5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="sound-on" viewBox="0 0 24 24">
+    <path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+</svg>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="../" aria-label="Romeworks home">
+      <svg class="mark mark-anim" viewBox="112 112 288 300" aria-hidden="true">
+        <path fill="currentColor" fill-opacity="0.42" d="M230 125Q229 239 127 290Q197 219 230 125Z"/>
+        <path fill="currentColor" fill-opacity="0.68" d="M292 130Q299 283 158 343Q250 252 292 130Z"/>
+        <path fill="currentColor" d="M360 140Q381 334 197 400Q303 286 360 140Z"/>
+      </svg>ROMEWORKS</a>
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="links"><i></i></button>
+    <nav class="links" id="links" aria-label="Main">
+      <a href="../#work">Games &amp; apps</a>
+      <a href="../#studio">Studio</a>
+      <a href="../#contact">Contact</a>
+      <a class="pill" href="https://play.google.com/store/apps/details?id=core.courier">Get Core Courier</a>
+    </nav>
+  </div>
+</header>
+
+<main class="theme-sd">
+<section class="page-hero">
+  <div class="wrap">
+    <div class="p-copy">
+      <a class="back rise" href="../#silo-drop"><svg aria-hidden="true"><use href="#arrow"/></svg>All games &amp; apps</a>
+      <div class="p-head rise" style="--d:.1s">
+        <img class="p-icon" src="../assets/img/sd/icon.png" alt="Silo Drop icon" width="72" height="72">
+        <p class="p-kicker">Endless descent / One thumb</p>
+      </div>
+      <h1 class="p-title rise" style="--d:.18s;margin-top:22px">Silo <span>Drop</span></h1>
+      <p class="p-lede rise" style="--d:.28s">Outrun the crusher. Find your way down.</p>
+      <p class="p-body rise" style="--d:.36s">A runner drops down an endless silo, one ledge at a time, while a tunnel
+        boring machine grinds down after it. Tap to jump, tap again in the air to
+        dash, swipe back to turn, swipe down to slide. Find the gap, drop through,
+        and keep ahead of the teeth.</p>
+      <div class="p-actions rise" style="--d:.46s">
+        <span class="soon-pill">Coming soon to Google Play</span>
+        <p class="p-links"><a href="privacy.html">Privacy policy</a> · <a href="licenses.html">Licenses</a></p>
+      </div>
+    </div>
+    <div class="p-media">
+      <div class="hazard"></div><div class="hazard two"></div>
+      <div class="phone rise" style="--w:300px;--d:.2s">
+        <div class="screen">
+          <video id="sd-trailer" muted loop playsinline preload="metadata" poster="../assets/img/sd/trailer-poster.jpg" data-inview aria-label="Silo Drop trailer">
+            <source src="../assets/video/silo-drop-trailer.mp4" type="video/mp4">
+          </video>
+        </div>
+        <button class="sound" data-sound="sd-trailer" aria-pressed="false">
+          <svg class="off-icon" aria-hidden="true"><use href="#sound-off"/></svg><svg class="on-icon" aria-hidden="true"><use href="#sound-on"/></svg><span class="label">Sound on</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" style="--b-bg:#0c0e10">
+  <div class="wrap">
+    <header class="band-head" data-reveal>
+      <p class="p-kicker">How it plays</p>
+      <h2>One thumb. <span>Endless descent.</span></h2>
+    </header>
+    <div class="gallery" style="--n:4">
+      <figure data-reveal style="--d:0s">
+        <div class="phone"><div class="screen"><img src="../assets/img/sd/ledge.webp" alt="The runner on a ledge, with a sign that says swipe to slide" width="540" height="960" loading="lazy"></div></div>
+        <figcaption><b>Swipe down</b>Slide under what you can't jump.</figcaption>
+      </figure>
+      <figure data-reveal style="--d:.08s">
+        <div class="phone"><div class="screen"><img src="../assets/img/sd/jump.webp" alt="The runner mid-jump, with a sign that says tap to jump" width="540" height="960" loading="lazy"></div></div>
+        <figcaption><b>Tap</b>Jump. Tap again in the air to dash.</figcaption>
+      </figure>
+      <figure data-reveal style="--d:.16s">
+        <div class="phone"><div class="screen"><img src="../assets/img/sd/crusher.webp" alt="The crusher's teeth grinding down the silo above the runner" width="540" height="960" loading="lazy"></div></div>
+        <figcaption><b>Find the gap</b>Drop through before the crusher arrives.</figcaption>
+      </figure>
+      <figure data-reveal style="--d:.24s">
+        <div class="phone"><div class="screen"><img src="../assets/img/sd/teeth.webp" alt="The runner deep in the silo with the crusher close behind" width="540" height="960" loading="lazy"></div></div>
+        <figcaption><b>Go deeper</b>The silo never ends. The crusher speeds up.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="band" style="--b-bg:#121315">
+  <div class="wrap closing">
+    <img class="banner" data-reveal src="../assets/img/sd/feature.webp" alt="Silo Drop: an arrow dropping through the gaps of two rings" width="1024" height="500" loading="lazy">
+    <div data-reveal style="--d:.1s">
+      <p class="p-kicker">Details</p>
+      <p>Made with Godot. No accounts, no sign-in, plays offline.</p>
+      <div class="links-row">
+        <a href="privacy.html">Privacy policy</a>
+        <a href="licenses.html">Licenses</a>
+        <a href="../">Romeworks</a>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <a class="brand" href="../"><svg class="mark" viewBox="112 112 288 300" aria-hidden="true"><use href="#mark"/></svg>ROMEWORKS</a>
+        <p style="margin:16px 0 0;max-width:34ch">Small, fast games and apps for phones. Built for one thumb.</p>
+      </div>
+      <div>
+        <h3>Core Courier</h3>
+        <ul>
+          <li><a href="https://play.google.com/store/apps/details?id=core.courier">Google Play</a></li>
+          <li><a href="https://romeonombrejr.github.io/core-courier-site/privacy.html">Privacy policy</a></li>
+          <li><a href="https://romeonombrejr.github.io/core-courier-site/licenses.html">Licenses</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Silo Drop</h3>
+        <ul>
+          <li><a href="./">About the game</a></li>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="licenses.html">Licenses</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Tindero</h3>
+        <ul>
+          <li><a href="../tindero/">About the app</a></li>
+          <li><a href="../tindero/privacy.html">Privacy policy</a></li>
+          <li><a href="../tindero/terms.html">Terms of service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© <span data-year>2026</span> Romeworks · <a href="mailto:romeworks.dev@gmail.com">romeworks.dev@gmail.com</a></span>
+      <span>Google Play and the Google Play logo are trademarks of Google LLC.</span>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

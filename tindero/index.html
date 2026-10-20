@@ -5,70 +5,196 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tindero</title>
 <meta name="description" content="Tindero: sell, track stock and utang for your sari-sari store with one camera. By Romeworks.">
+<link rel="canonical" href="https://romeworks.github.io/tindero/">
+<meta name="theme-color" content="#52237d">
 <link rel="icon" type="image/png" href="icon.png">
-<style>
-  body { margin: 0; padding: 48px 20px 64px; background: #fbf9fd; color: #1e1530;
-         font: 17px/1.6 -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif; }
-  main { max-width: 680px; margin: 0 auto; }
-  .mark { width: 96px; height: 96px; border-radius: 22px; display: block; }
-  h1 { font-size: 40px; margin: 16px 0 4px; }
-  .tag { color: #5b2a86; font-weight: 600; margin: 0 0 28px; }
-  h2 { font-size: 20px; margin: 32px 0 8px; color: #5b2a86; }
-  p, li { color: #3b3149; }
-  a { color: #5b2a86; }
-  .tiers { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
-  .tier { background: #fff; border: 1px solid #e4dcef; border-radius: 16px; padding: 16px; }
-  .tier.plus { border: 2px solid #5b2a86; background: #f3ecfa; }
-  .tier h3 { margin: 0 0 4px; font-size: 18px; }
-  .tier p { margin: 0; font-size: 15px; }
-  .soon { display: inline-block; background: #ffc53d; color: #1e1530; font-size: 13px; font-weight: 600;
-          border-radius: 8px; padding: 2px 8px; }
-  @media (max-width: 480px) { .tiers { grid-template-columns: 1fr; } }
-</style>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Romeworks">
+<meta property="og:title" content="Tindero: your store's record book, with one camera">
+<meta property="og:description" content="Sell, track stock and utang for your sari-sari store with one camera. Coming soon to Google Play.">
+<meta property="og:url" content="https://romeworks.github.io/tindero/">
+<meta property="og:image" content="https://romeworks.github.io/assets/img/og-tindero.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../assets/site.js" defer></script>
 </head>
 <body>
-<main>
-  <img class="mark" src="icon.png" alt="Tindero logo: a store with a striped awning">
-  <h1>Tindero</h1>
-  <p class="tag">Your sari-sari store's record book, with one camera.</p>
-  <p><span class="soon">Coming soon to Google Play</span></p>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="112 112 288 300">
+    <path fill="currentColor" fill-opacity="0.42" d="M230 125Q229 239 127 290Q197 219 230 125Z"/>
+    <path fill="currentColor" fill-opacity="0.68" d="M292 130Q299 283 158 343Q250 252 292 130Z"/>
+    <path fill="currentColor" d="M360 140Q381 334 197 400Q303 286 360 140Z"/>
+  </symbol>
+  <symbol id="arrow" viewBox="0 0 24 24">
+    <path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+</svg>
 
-  <h2>What it does</h2>
-  <ul>
-    <li><strong>Sell with one camera.</strong> Hold an item in the box: barcodes
-    ring up at once, and items without a barcode (eggs, ice, candies,
-    per-stick cigarettes) are recognized from your own product photos.</li>
-    <li><strong>Add products fast.</strong> The camera reads the barcode and the
-    name on the label for you.</li>
-    <li><strong>Utang</strong> per customer, with payments and history.</li>
-    <li><strong>Today's report:</strong> sales, profit, best sellers and what is
-    running low.</li>
-    <li>Built for one hand, works offline, in English or Filipino, and in your
-    own currency.</li>
-  </ul>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="../" aria-label="Romeworks home">
+      <svg class="mark mark-anim" viewBox="112 112 288 300" aria-hidden="true">
+        <path fill="currentColor" fill-opacity="0.42" d="M230 125Q229 239 127 290Q197 219 230 125Z"/>
+        <path fill="currentColor" fill-opacity="0.68" d="M292 130Q299 283 158 343Q250 252 292 130Z"/>
+        <path fill="currentColor" d="M360 140Q381 334 197 400Q303 286 360 140Z"/>
+      </svg>ROMEWORKS</a>
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="links"><i></i></button>
+    <nav class="links" id="links" aria-label="Main">
+      <a href="../#work">Games &amp; apps</a>
+      <a href="../#studio">Studio</a>
+      <a href="../#contact">Contact</a>
+      <a class="pill" href="https://play.google.com/store/apps/details?id=core.courier">Get Core Courier</a>
+    </nav>
+  </div>
+</header>
 
-  <h2>Price</h2>
-  <div class="tiers">
-    <div class="tier">
-      <h3>Free</h3>
-      <p>Everything, up to 25 products. No ads.</p>
+<main class="theme-td">
+<section class="page-hero">
+  <div class="wrap">
+    <div class="p-copy">
+      <a class="back rise" href="../#tindero"><svg aria-hidden="true"><use href="#arrow"/></svg>All games &amp; apps</a>
+      <div class="p-head rise" style="--d:.1s">
+        <img class="p-icon" src="icon.png" alt="Tindero logo: a store with a striped awning" width="72" height="72">
+        <p class="p-kicker">Store app / Sari-sari stores</p>
+      </div>
+      <h1 class="p-title rise" style="--d:.18s;margin-top:22px">Tindero</h1>
+      <p class="p-lede rise" style="--d:.28s">Your sari-sari store's record book, with one camera.</p>
+      <div class="price-row rise" style="--d:.38s"><span><b>Free</b> up to 25 products, no ads</span><span><b>Plus</b> one-time, no subscription</span></div>
+      <div class="p-actions rise" style="--d:.46s">
+        <span class="soon-pill">Coming soon to Google Play</span>
+        <p class="p-links"><a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of service</a></p>
+      </div>
     </div>
-    <div class="tier plus">
-      <h3>Tindero Plus</h3>
-      <p>One-time purchase: unlimited products and daily backup to your own
-      Google Drive. No subscription.</p>
+    <div class="p-media">
+      <div class="fan" data-reveal>
+        <div class="phone f1"><div class="screen"><img src="../assets/img/td/credit.webp" alt="Tindero: what each customer owes" width="560" height="1204"></div></div>
+        <div class="phone f2"><div class="screen"><img src="../assets/img/td/sell.webp" alt="Tindero: selling with the camera" width="560" height="1204"></div></div>
+        <div class="phone f3"><div class="screen"><img src="../assets/img/td/report.webp" alt="Tindero: today's report" width="560" height="1204"></div></div>
+      </div>
+      <figure class="scan-card" style="margin:0">
+        <video muted loop playsinline preload="metadata" poster="../assets/img/td/scan-poster.jpg" data-inview aria-label="Tindero recognizing a can by its barcode and garlic from a photo">
+          <source src="../assets/video/tindero-scan.mp4" type="video/mp4">
+        </video>
+        <figcaption><p>Hold an item in the box. That's it.</p></figcaption>
+      </figure>
     </div>
   </div>
-  <p>Prices are shown in your currency in Google Play.</p>
+</section>
 
-  <h2>Your data</h2>
-  <p>Your records stay on your phone. Romeworks has no servers for Tindero
-  and never sees your sales or customers. Backup, if you turn it on, goes to
-  a private folder in your own Google Drive. Read the
-  <a href="privacy.html">privacy policy</a>.</p>
+<section class="band" style="--b-bg:#fbf9fd;--b-ink:#1e1530;--b-muted:#4a3f5a;--b-line:#d9cfe6;--p-accent:#5b2a86;--c-bg:#fff;--c-line:#e4dcef">
+  <div class="wrap">
+    <header class="band-head" data-reveal>
+      <p class="p-kicker">What it does</p>
+      <h2>Ring up a sale <span>by holding it up.</span></h2>
+    </header>
+    <div class="gallery" style="--n:5">
+      <figure data-reveal style="--d:0s">
+        <div class="phone"><div class="screen"><img src="../assets/img/td/sell.webp" alt="Selling: the camera box above the cart" width="560" height="1204" loading="lazy"></div></div>
+        <figcaption><b>Sell</b>Hold an item in the box. It goes in the cart.</figcaption>
+      </figure>
+      <figure data-reveal style="--d:.06s">
+        <div class="phone"><div class="screen"><img src="../assets/img/td/is-it.webp" alt="Is it garlic, red onion or ginger? Tindero suggests matches from your photos" width="560" height="1204" loading="lazy"></div></div>
+        <figcaption><b>No barcode?</b>It suggests matches from your own photos.</figcaption>
+      </figure>
+      <figure data-reveal style="--d:.12s">
+        <div class="phone"><div class="screen"><img src="../assets/img/td/products.webp" alt="Products with prices and stock" width="560" height="1204" loading="lazy"></div></div>
+        <figcaption><b>Products</b>Prices and stock, with low-stock warnings.</figcaption>
+      </figure>
+      <figure data-reveal style="--d:.18s">
+        <div class="phone"><div class="screen"><img src="../assets/img/td/credit.webp" alt="Credit: what each customer owes" width="560" height="1204" loading="lazy"></div></div>
+        <figcaption><b>Utang</b>Who owes what, with every payment.</figcaption>
+      </figure>
+      <figure data-reveal style="--d:.24s">
+        <div class="phone"><div class="screen"><img src="../assets/img/td/report.webp" alt="Today's report with sales, profit and best sellers" width="560" height="1204" loading="lazy"></div></div>
+        <figcaption><b>Report</b>Today's sales, profit and best sellers.</figcaption>
+      </figure>
+    </div>
 
-  <p><a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of service</a> ·
-  <a href="mailto:romeworks.dev@gmail.com">romeworks.dev@gmail.com</a> · <a href="../">Romeworks</a></p>
+    <div class="cards" style="--n:3;margin-top:56px">
+      <div class="card" data-reveal><h3>Sell with one camera</h3><p>Hold an item in the box: barcodes ring up at once, and items without a barcode (eggs, ice, candies, per-stick cigarettes) are recognized from your own product photos.</p></div>
+      <div class="card" data-reveal style="--d:.06s"><h3>Add products fast</h3><p>The camera reads the barcode and the name on the label for you.</p></div>
+      <div class="card" data-reveal style="--d:.12s"><h3>Utang</h3><p>Per customer, with payments and history.</p></div>
+      <div class="card" data-reveal><h3>Today's report</h3><p>Sales, profit, best sellers and what is running low.</p></div>
+      <div class="card" data-reveal style="--d:.06s"><h3>Made for one hand</h3><p>Built for one hand, works offline, in English or Filipino, and in your own currency.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" style="--b-bg:#f3ecfa;--b-ink:#1e1530;--b-muted:#4a3f5a;--b-line:#d9cfe6;--p-accent:#5b2a86;--c-bg:#fff;--c-line:#e4dcef">
+  <div class="wrap">
+    <header class="band-head" data-reveal>
+      <p class="p-kicker">Price</p>
+      <h2>Free to start. <span>Pay once.</span></h2>
+    </header>
+    <div class="cards" style="--n:2">
+      <div class="card" data-reveal><span class="tag" style="background:#e4dcef;color:#2a1240">Free</span><h3>Free</h3><p>Everything, up to 25 products. No ads.</p></div>
+      <div class="card" data-reveal style="--d:.08s;border:2px solid #5b2a86"><span class="tag" style="background:#ffc53d;color:#2a1240">One-time purchase</span><h3>Tindero Plus</h3><p>One-time purchase: unlimited products and daily backup to your own Google Drive. No subscription.</p></div>
+    </div>
+    <p style="margin:20px 0 0;color:#4a3f5a" data-reveal>Prices are shown in your currency in Google Play.</p>
+  </div>
+</section>
+
+<section class="band" style="--b-bg:#52237d">
+  <div class="wrap closing">
+    <div data-reveal>
+      <p class="p-kicker">Your data</p>
+      <h2 style="margin:0;font-family:var(--p-display);font-weight:800;font-size:clamp(34px,4vw,56px);line-height:1.02;letter-spacing:-0.02em">Your records stay on <span style="color:#ffc53d">your phone.</span></h2>
+    </div>
+    <div data-reveal style="--d:.1s">
+      <p>Your records stay on your phone. Romeworks has no servers for Tindero
+      and never sees your sales or customers. Backup, if you turn it on, goes to
+      a private folder in your own Google Drive. Read the
+      <a href="privacy.html" style="color:#fff8ec">privacy policy</a>.</p>
+      <div class="links-row">
+        <a href="privacy.html">Privacy policy</a>
+        <a href="terms.html">Terms of service</a>
+        <a href="mailto:romeworks.dev@gmail.com">romeworks.dev@gmail.com</a>
+        <a href="../">Romeworks</a>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <a class="brand" href="../"><svg class="mark" viewBox="112 112 288 300" aria-hidden="true"><use href="#mark"/></svg>ROMEWORKS</a>
+        <p style="margin:16px 0 0;max-width:34ch">Small, fast games and apps for phones. Built for one thumb.</p>
+      </div>
+      <div>
+        <h3>Core Courier</h3>
+        <ul>
+          <li><a href="https://play.google.com/store/apps/details?id=core.courier">Google Play</a></li>
+          <li><a href="https://romeonombrejr.github.io/core-courier-site/privacy.html">Privacy policy</a></li>
+          <li><a href="https://romeonombrejr.github.io/core-courier-site/licenses.html">Licenses</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Silo Drop</h3>
+        <ul>
+          <li><a href="../silo-drop/">About the game</a></li>
+          <li><a href="../silo-drop/privacy.html">Privacy policy</a></li>
+          <li><a href="../silo-drop/licenses.html">Licenses</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Tindero</h3>
+        <ul>
+          <li><a href="./">About the app</a></li>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="terms.html">Terms of service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© <span data-year>2026</span> Romeworks · <a href="mailto:romeworks.dev@gmail.com">romeworks.dev@gmail.com</a></span>
+      <span>Google Play and the Google Play logo are trademarks of Google LLC.</span>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

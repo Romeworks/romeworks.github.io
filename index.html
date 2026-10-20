@@ -3,74 +3,298 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Romeworks</title>
-<meta name="description" content="Romeworks makes small, fast games and apps for phones, built for one thumb.">
-<link rel="icon" type="image/png" href="icon.png">
-<style>
-  :root { --ink: #0d1f33; --panel: #132b44; --cream: #f5f2df; --mint: #7cf9d5; --muted: #9bb1bd; }
-  * { box-sizing: border-box; }
-  body { margin: 0; min-height: 100vh; background: var(--ink); color: var(--cream);
-         font: 17px/1.6 -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif;
-         display: flex; align-items: center; justify-content: center; padding: 48px 16px; }
-  main { width: 100%; max-width: 560px; text-align: center; }
-  .mark { width: 96px; height: 96px; }
-  h1 { font-size: 40px; letter-spacing: 0.08em; margin: 16px 0 4px; }
-  .tag { color: var(--mint); letter-spacing: 0.2em; font-size: 13px; text-transform: uppercase; margin: 0 0 40px; }
-  section { background: var(--panel); border-radius: 20px; padding: 28px 24px; text-align: left; }
-  section + section { margin-top: 20px; }
-  h2 { font-size: 22px; margin: 0 0 6px; }
-  p { margin: 0 0 14px; color: #d5dde3; }
-  a { color: var(--mint); }
-  .play { display: inline-block; background: var(--mint); color: var(--ink); text-decoration: none;
-          font-weight: 600; padding: 12px 20px; border-radius: 12px; margin: 6px 0 16px; }
-  .small { font-size: 14px; color: var(--muted); margin: 0; }
-  footer { margin-top: 32px; font-size: 14px; color: var(--muted); }
-</style>
+<title>Romeworks: games and apps built for one thumb</title>
+<meta name="description" content="Romeworks makes small, fast games and apps for phones, built for one thumb. Core Courier is out now on Google Play; Silo Drop and Tindero are coming soon.">
+<link rel="canonical" href="https://romeworks.github.io/">
+<meta name="theme-color" content="#e4e3de">
+<link rel="icon" href="assets/img/mark.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="assets/img/icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Romeworks">
+<meta property="og:title" content="Romeworks: built for one thumb">
+<meta property="og:description" content="Small, fast games and apps for phones. Core Courier is out now; Silo Drop and Tindero are coming soon.">
+<meta property="og:url" content="https://romeworks.github.io/">
+<meta property="og:image" content="https://romeworks.github.io/assets/img/og-home.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="assets/fonts/schibsted-grotesk-normal-400-900-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js" defer></script>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="112 112 288 300">
+    <path fill="currentColor" fill-opacity="0.42" d="M230 125Q229 239 127 290Q197 219 230 125Z"/>
+    <path fill="currentColor" fill-opacity="0.68" d="M292 130Q299 283 158 343Q250 252 292 130Z"/>
+    <path fill="currentColor" d="M360 140Q381 334 197 400Q303 286 360 140Z"/>
+  </symbol>
+  <symbol id="arrow" viewBox="0 0 24 24">
+    <path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="sound-off" viewBox="0 0 24 24">
+    <path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path d="M17 9l5 6M22 9l-5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="sound-on" viewBox="0 0 24 24">
+    <path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+</svg>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Romeworks home">
+      <svg class="mark mark-anim" viewBox="112 112 288 300" aria-hidden="true">
+        <path fill="currentColor" fill-opacity="0.42" d="M230 125Q229 239 127 290Q197 219 230 125Z"/>
+        <path fill="currentColor" fill-opacity="0.68" d="M292 130Q299 283 158 343Q250 252 292 130Z"/>
+        <path fill="currentColor" d="M360 140Q381 334 197 400Q303 286 360 140Z"/>
+      </svg>ROMEWORKS</a>
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="links"><i></i></button>
+    <nav class="links" id="links" aria-label="Main">
+      <a href="#work">Games &amp; apps</a>
+      <a href="#studio">Studio</a>
+      <a href="#contact">Contact</a>
+      <a class="pill" href="https://play.google.com/store/apps/details?id=core.courier">Get Core Courier</a>
+    </nav>
+  </div>
+</header>
+
 <main>
-  <img class="mark" src="icon.png" alt="Romeworks logo">
-  <h1>ROMEWORKS</h1>
-  <p class="tag">Built for one thumb</p>
+<section class="hero">
+  <div class="wrap">
+    <div class="copy">
+      <p class="eyebrow rise" style="--d:.1s">Independent games &amp; apps</p>
+      <h1>
+        <span class="line"><span style="--d:.15s">Built for</span></span>
+        <span class="line"><span style="--d:.27s"><em>one thumb.</em></span></span>
+      </h1>
+      <p class="lede rise" style="--d:.45s">Romeworks makes small, fast games and apps for phones. One is out now. Two more are on the way.</p>
+      <div class="ctas rise" style="--d:.6s">
+        <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=core.courier"><img src="assets/img/cc/icon.png" alt="" width="36" height="36">Play Core Courier</a>
+        <a class="btn btn-ghost" href="#soon">See what's coming <svg class="arrow" aria-hidden="true"><use href="#arrow"/></svg></a>
+      </div>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="block"></div>
+      <div class="layer sd"><div class="phone"><div class="screen"><img src="assets/img/sd/crusher.webp" alt="" width="540" height="960"></div>
+        <span class="chip"><img src="assets/img/sd/icon.png" alt="">Silo Drop · Soon</span></div></div>
+      <div class="layer td"><div class="phone"><div class="screen"><img src="assets/img/td/sell.webp" alt="" width="560" height="1204"></div>
+        <span class="chip"><img src="assets/img/td/icon.png" alt="">Tindero · Soon</span></div></div>
+      <div class="layer cc"><div class="phone"><div class="screen"><img src="assets/img/cc/02-dash.webp" alt="" width="540" height="960"></div>
+        <span class="chip live"><img src="assets/img/cc/icon.png" alt="">Core Courier · Out now</span></div></div>
+    </div>
+  </div>
+</section>
 
-  <section>
-    <h2>Core Courier</h2>
-    <p>One-thumb endless arcade. Steer, dash through drones, keep the run alive.</p>
-    <a class="play" href="https://play.google.com/store/apps/details?id=core.courier">Get it on Google Play</a>
-    <p class="small">
-      <a href="https://romeonombrejr.github.io/core-courier-site/privacy.html">Privacy policy</a>
-      &nbsp;·&nbsp;
-      <a href="https://romeonombrejr.github.io/core-courier-site/licenses.html">Licenses</a>
-    </p>
-  </section>
+<div class="ticker" aria-label="Core Courier is out now on Google Play. Silo Drop and Tindero are coming soon.">
+  <div class="ticker-track" aria-hidden="true">
+    <span><a href="#core-courier" tabindex="-1">Core Courier — out now on Google Play</a><svg class="mark"><use href="#mark"/></svg><a href="#silo-drop" tabindex="-1">Silo Drop — coming soon</a><svg class="mark"><use href="#mark"/></svg><a href="#tindero" tabindex="-1">Tindero — coming soon</a><svg class="mark"><use href="#mark"/></svg></span>
+    <span><a href="#core-courier" tabindex="-1">Core Courier — out now on Google Play</a><svg class="mark"><use href="#mark"/></svg><a href="#silo-drop" tabindex="-1">Silo Drop — coming soon</a><svg class="mark"><use href="#mark"/></svg><a href="#tindero" tabindex="-1">Tindero — coming soon</a><svg class="mark"><use href="#mark"/></svg></span>
+  </div>
+</div>
 
-  <section>
-    <h2>Silo Drop</h2>
-    <p>One-thumb endless descent. Outrun the crusher and find your way down.</p>
-    <p class="small">Coming soon to Google Play.</p>
-    <p class="small">
-      <a href="silo-drop/">About the game</a>
-      &nbsp;·&nbsp;
-      <a href="silo-drop/privacy.html">Privacy policy</a>
-      &nbsp;·&nbsp;
-      <a href="silo-drop/licenses.html">Licenses</a>
-    </p>
-  </section>
+<section class="section" id="work">
+  <div class="wrap">
+    <header class="sec-head" data-reveal>
+      <p class="sec-tag"><b>01</b> Out now</p>
+      <h2>Out now on <em>Google Play.</em></h2>
+    </header>
 
-  <section>
-    <h2>Tindero</h2>
-    <p>Sell, track stock and utang for your sari-sari store, with one camera.</p>
-    <p class="small">Coming soon to Google Play.</p>
-    <p class="small">
-      <a href="tindero/">About the app</a>
-      &nbsp;·&nbsp;
-      <a href="tindero/privacy.html">Privacy policy</a>
-      &nbsp;·&nbsp;
-      <a href="tindero/terms.html">Terms of service</a>
-    </p>
-  </section>
+    <article class="product theme-cc" id="core-courier" data-reveal>
+      <div class="p-copy">
+        <div class="p-head">
+          <img class="p-icon" src="assets/img/cc/icon.png" alt="Core Courier icon" width="72" height="72">
+          <div>
+            <p class="p-kicker">Endless run / One thumb</p>
+            <h3 class="p-title">Core Courier</h3>
+          </div>
+        </div>
+        <p class="p-lede">A one-thumb endless arcade game you can play offline. The courier never stops running.</p>
+        <ul class="p-points">
+          <li><span><b>Drag anywhere</b> to steer. <b>Tap</b> to dash, or flick to dash that way.</span></li>
+          <li><span>A dash cuts straight through a drone. Anything else that touches you ends the run.</span></li>
+          <li><span>A fresh arena every run, five sectors, instant restarts. No accounts, no sign-in.</span></li>
+        </ul>
+        <div class="arenas" role="tablist" aria-label="Sectors" data-cycle-tabs="cc-cycle">
+          <button class="arena" role="tab" style="--c:#8cffe3">The Outpost</button>
+          <button class="arena" role="tab" style="--c:#ffe67d">The Foundry</button>
+          <button class="arena" role="tab" style="--c:#cbb4ff">The Relay</button>
+          <button class="arena" role="tab" style="--c:#84daff">The Drift</button>
+          <button class="arena" role="tab" style="--c:#ffb086">The Core</button>
+        </div>
+        <div class="p-actions">
+          <a class="play-badge" href="https://play.google.com/store/apps/details?id=core.courier"><img src="assets/img/google-play-badge.png" alt="Get it on Google Play" width="646" height="250"></a>
+          <p class="p-links"><a href="https://romeonombrejr.github.io/core-courier-site/privacy.html">Privacy policy</a> · <a href="https://romeonombrejr.github.io/core-courier-site/licenses.html">Licenses</a></p>
+        </div>
+      </div>
+      <div class="p-media">
+        <div class="phone cycle" id="cc-cycle" data-cycle style="--w:290px">
+          <div class="screen">
+            <img class="on" src="assets/img/cc/02-dash.webp" alt="Core Courier: the courier dashes through a drone in the Outpost" width="540" height="960">
+            <img src="assets/img/cc/03-foundry.webp" alt="The Foundry sector" width="540" height="960" loading="lazy">
+            <img src="assets/img/cc/04-relay.webp" alt="The Relay sector" width="540" height="960" loading="lazy">
+            <img src="assets/img/cc/05-drift.webp" alt="The Drift sector" width="540" height="960" loading="lazy">
+            <img src="assets/img/cc/06-core.webp" alt="The Core sector" width="540" height="960" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
 
-  <footer>Contact: <a href="mailto:romeworks.dev@gmail.com">romeworks.dev@gmail.com</a></footer>
+<section class="section" id="soon">
+  <div class="wrap">
+    <header class="sec-head" data-reveal>
+      <p class="sec-tag"><b>02</b> Coming soon</p>
+      <h2>Two more, <em>on the way.</em></h2>
+    </header>
+
+    <article class="product theme-sd flip" id="silo-drop" data-reveal>
+      <div class="p-copy">
+        <div class="p-head">
+          <img class="p-icon" src="assets/img/sd/icon.png" alt="Silo Drop icon" width="72" height="72">
+          <div>
+            <p class="p-kicker">Endless descent / One thumb</p>
+            <h3 class="p-title">Silo <span>Drop</span></h3>
+          </div>
+        </div>
+        <p class="p-lede">Outrun the crusher. Find your way down.</p>
+        <p class="p-body">A runner drops down an endless silo, one ledge at a time, while a tunnel boring machine grinds down after it. Find the gap, drop through, and keep ahead of the teeth.</p>
+        <div class="controls">
+          <div><b>Tap</b>Jump</div>
+          <div><b>Tap in the air</b>Dash</div>
+          <div><b>Swipe back</b>Turn around</div>
+          <div><b>Swipe down</b>Slide</div>
+        </div>
+        <div class="p-actions">
+          <span class="soon-pill">Coming soon to Google Play</span>
+          <p class="p-links"><a href="silo-drop/">About the game</a> · <a href="silo-drop/privacy.html">Privacy policy</a> · <a href="silo-drop/licenses.html">Licenses</a></p>
+        </div>
+      </div>
+      <div class="p-media">
+        <div class="hazard"></div><div class="hazard two"></div>
+        <div class="phone" style="--w:290px">
+          <div class="screen">
+            <video id="sd-trailer" muted loop playsinline preload="none" poster="assets/img/sd/trailer-poster.jpg" data-inview aria-label="Silo Drop trailer">
+              <source src="assets/video/silo-drop-trailer.mp4" type="video/mp4">
+            </video>
+          </div>
+          <button class="sound" data-sound="sd-trailer" aria-pressed="false">
+            <svg class="off-icon" aria-hidden="true"><use href="#sound-off"/></svg><svg class="on-icon" aria-hidden="true"><use href="#sound-on"/></svg><span class="label">Sound on</span>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article class="product theme-td" id="tindero" data-reveal>
+      <div class="p-copy">
+        <div class="p-head">
+          <img class="p-icon" src="assets/img/td/icon.png" alt="Tindero icon" width="72" height="72">
+          <div>
+            <p class="p-kicker">Store app / Sari-sari stores</p>
+            <h3 class="p-title">Tindero</h3>
+          </div>
+        </div>
+        <p class="p-lede">Your sari-sari store's record book, with one camera.</p>
+        <ul class="p-points">
+          <li><span><b>Sell with one camera.</b> Barcodes ring up at once, and items without one are recognized from your own product photos.</span></li>
+          <li><span><b>Utang</b> per customer, with payments and history.</span></li>
+          <li><span><b>Today's report:</b> sales, profit, best sellers and what is running low.</span></li>
+          <li><span>Works offline, in English or Filipino, and in your own currency.</span></li>
+        </ul>
+        <div class="price-row"><span><b>Free</b> up to 25 products, no ads</span><span><b>Plus</b> one-time, no subscription</span></div>
+        <div class="p-actions">
+          <span class="soon-pill">Coming soon to Google Play</span>
+          <p class="p-links"><a href="tindero/">About the app</a> · <a href="tindero/privacy.html">Privacy policy</a> · <a href="tindero/terms.html">Terms</a></p>
+        </div>
+      </div>
+      <div class="p-media">
+        <div class="fan" data-reveal>
+          <div class="phone f1"><div class="screen"><img src="assets/img/td/credit.webp" alt="Tindero: what each customer owes" width="560" height="1204" loading="lazy"></div></div>
+          <div class="phone f2"><div class="screen"><img src="assets/img/td/sell.webp" alt="Tindero: selling with the camera" width="560" height="1204" loading="lazy"></div></div>
+          <div class="phone f3"><div class="screen"><img src="assets/img/td/report.webp" alt="Tindero: today's report" width="560" height="1204" loading="lazy"></div></div>
+        </div>
+        <figure class="scan-card" style="margin:0">
+          <video muted loop playsinline preload="none" poster="assets/img/td/scan-poster.jpg" data-inview aria-label="Tindero recognizing a can by its barcode and garlic from a photo">
+            <source src="assets/video/tindero-scan.mp4" type="video/mp4">
+          </video>
+          <figcaption><p>Hold an item in the box. That's it.</p></figcaption>
+        </figure>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section" id="studio">
+  <div class="wrap">
+    <header class="sec-head" data-reveal>
+      <p class="sec-tag"><b>03</b> Studio</p>
+      <h2>Small, fast things for <em>the phone in your hand.</em></h2>
+    </header>
+    <div class="studio-top" data-reveal>
+      <div></div>
+      <p>Romeworks is an independent studio making games and apps for Android. Everything is designed around one hand and a few spare seconds, and each one gets a look of its own.</p>
+    </div>
+    <ol class="principles">
+      <li data-reveal style="--d:0s"><span class="n">01</span><h3>One thumb</h3><p>Every control sits under one thumb, so it works standing in line or with a bag in the other hand.</p></li>
+      <li data-reveal style="--d:.08s"><span class="n">02</span><h3>Plays offline</h3><p>No signal, no problem. The games run without a connection and Tindero keeps its records on the phone.</p></li>
+      <li data-reveal style="--d:.16s"><span class="n">03</span><h3>No accounts</h3><p>Nothing to sign up for. Open it and go.</p></li>
+      <li data-reveal style="--d:.24s"><span class="n">04</span><h3>Its own look</h3><p>Each game and app gets its own colors and type, so none of them feels like a reskin of the last.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <svg class="big-mark" viewBox="112 112 288 300" aria-hidden="true"><use href="#mark"/></svg>
+  <div class="wrap">
+    <p class="sec-tag" data-reveal><b>04</b> Contact</p>
+    <h2 data-reveal>Say hello.</h2>
+    <p data-reveal>Feedback, bug reports, press and partnership questions all go to one inbox.</p>
+    <div class="contact-actions" data-reveal>
+      <a class="mail" href="mailto:romeworks.dev@gmail.com">romeworks.dev@gmail.com <svg class="arrow" aria-hidden="true"><use href="#arrow"/></svg></a>
+    </div>
+    <a class="btn btn-light" href="https://play.google.com/store/apps/developer?id=Romeworks" data-reveal>Romeworks on Google Play <svg class="arrow" aria-hidden="true"><use href="#arrow"/></svg></a>
+  </div>
+</section>
 </main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <a class="brand" href="./"><svg class="mark" viewBox="112 112 288 300" aria-hidden="true"><use href="#mark"/></svg>ROMEWORKS</a>
+        <p style="margin:16px 0 0;max-width:34ch">Small, fast games and apps for phones. Built for one thumb.</p>
+      </div>
+      <div>
+        <h3>Core Courier</h3>
+        <ul>
+          <li><a href="https://play.google.com/store/apps/details?id=core.courier">Google Play</a></li>
+          <li><a href="https://romeonombrejr.github.io/core-courier-site/privacy.html">Privacy policy</a></li>
+          <li><a href="https://romeonombrejr.github.io/core-courier-site/licenses.html">Licenses</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Silo Drop</h3>
+        <ul>
+          <li><a href="silo-drop/">About the game</a></li>
+          <li><a href="silo-drop/privacy.html">Privacy policy</a></li>
+          <li><a href="silo-drop/licenses.html">Licenses</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Tindero</h3>
+        <ul>
+          <li><a href="tindero/">About the app</a></li>
+          <li><a href="tindero/privacy.html">Privacy policy</a></li>
+          <li><a href="tindero/terms.html">Terms of service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© <span data-year>2026</span> Romeworks · <a href="mailto:romeworks.dev@gmail.com">romeworks.dev@gmail.com</a></span>
+      <span>Google Play and the Google Play logo are trademarks of Google LLC.</span>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
